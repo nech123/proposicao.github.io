@@ -111,6 +111,11 @@ submitBtn.addEventListener('click', () =>{
             }else{
            quiz.innerHTML = `<h2>Você acertou corretamente ${score}/${quizData.length} questões</h2> 
             <button onclick="location.reload()">Jogar Novamente</button>`
+            if(score < 5){
+                alert("Qual foi victor kkkkkkkkkkkkkk")
+            }else{
+                alert("Parabéns meu mano!")
+            }
             }
        }
 });
