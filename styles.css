@@ -12,10 +12,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     .flu{
         color: gray;
-        position: absolute;
+       
         bottom: 0;
         font-size: 20px;
     }
