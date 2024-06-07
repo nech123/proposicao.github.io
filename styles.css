@@ -15,13 +15,43 @@ body{
     display: flex;
     flex-direction: column;
 
-    .flu{
-        color: gray;
-       
-        bottom: 0;
-        font-size: 20px;
-    }
 
+    #emoji-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+    }
+    #emoji-container {
+        animation: laughAnimation 2s infinite;
+    }
+    @keyframes laughAnimation  {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+}
+
+.texto-mudando h2 {
+    font-size: 24px;
+    text-align: center;
+    color: red;
+    padding: 20px;
+    animation: mudarCor 2s linear infinite;
+}
+
+@keyframes mudarCor {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: purple; }
+    100% { color: orange; }
 }
 
 .quiz-container{
