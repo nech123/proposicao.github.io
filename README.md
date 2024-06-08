@@ -1,2 +1,1 @@
-# proposicao.github.io 
-2 -
+# Pequeno quiz de 10 perguntas.
