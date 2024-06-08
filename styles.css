@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-  background-color: black;
+body {
+    background-color: black;
     font-family: "Poppins", sans-serif;
     margin: 0;
     display: flex;
@@ -29,17 +29,53 @@ body{
         backdrop-filter: blur(5px);
         z-index: 1000;
     }
+
     #emoji-container {
         animation: laughAnimation 2s infinite;
     }
-    @keyframes laughAnimation  {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
+
+    @keyframes laughAnimation {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
     }
 }
 
+#displayName {
+    background-color: transparent;
+    color: #ae53d4;
+}
+
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#nameInput {
+    width: 30vw;
+    height: 5vh;
+    font-size: 2rem;
+}
+
+#btn-go {
+    width: 10vw;
+}
+
+#canvas {
+    display: block;
+    position: absolute;
+}
+
 .texto-mudando h2 {
-    font-size: 24px;
+    font-size: 10px;
     text-align: center;
     color: red;
     padding: 20px;
@@ -47,35 +83,49 @@ body{
 }
 
 @keyframes mudarCor {
-    0% { color: red; }
-    25% { color: blue; }
-    50% { color: green; }
-    75% { color: purple; }
-    100% { color: orange; }
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: purple;
+    }
+
+    100% {
+        color: orange;
+    }
 }
 
-.quiz-container{
+.quiz-container {
     background-color: #01204E;
     border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
     width: 600px;
     max-width: 100%;
     overflow: hidden;
 }
 
 
-.quiz-header{
+.quiz-header {
     padding: 4rem;
     color: white;
 }
 
-h2{
+h2 {
     padding: 1rem;
     text-align: center;
     margin: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
 }
@@ -83,15 +133,15 @@ ul{
 ul li {
     font-size: 1.1rem;
     margin: 1rem 0;
- 
+
 }
 
-ul li label{
+ul li label {
     cursor: pointer;
 }
 
-button{
-    background-color:#8e44ad;
+button {
+    background-color: #8e44ad;
     display: block;
     color: white;
     width: 100%;
@@ -106,7 +156,7 @@ button:hover {
     background-color: #531e69;
 }
 
-button:focus{
+button:focus {
     background-color: #65048f;
     outline: none;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,52 +9,56 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-<body>
 
-    <div class="quiz-container" id="quiz" >
+<body>
+    <div id="inputContainer">
+        <input type="text" id="nameInput" placeholder="Digite seu nome">
+        <button id="btn-go" onclick="mostrarNome()">Prosseguir</button>
+    </div>
+    <h2 id="displayName"></h2>
+    <div class="quiz-container" id="quiz">
         <div class="quiz-header">
             <h2 id="question">Question Text</h2>
-        <ul>
-            <li>
-                <input type="radio" id="a" name="answer" class="answer">
-                <label id="a_text" for="a">Question</label>
-            </li>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer">
+                    <label id="a_text" for="a">Question</label>
+                </li>
 
-            <li>
-                <input type="radio" id="b" name="answer" class="answer">
-                <label id="b_text" for="b">Question</label>
-            </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer">
+                    <label id="b_text" for="b">Question</label>
+                </li>
 
-            <li>
-                <input type="radio" id="c" name="answer" class="answer">
-                <label id="c_text" for="c">Question</label>
-            </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="answer">
+                    <label id="c_text" for="c">Question</label>
+                </li>
 
-            <li>
-                <input type="radio" id="d" name="answer" class="answer">
-                <label id="d_text" for="d">Question</label>
-            </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="answer">
+                    <label id="d_text" for="d">Question</label>
+                </li>
 
-            <li>
-                <input type="radio" id="e" name="answer" class="answer">
-                <label id="e_text" for="e">Question</label>
-            </li>
+                <li>
+                    <input type="radio" id="e" name="answer" class="answer">
+                    <label id="e_text" for="e">Question</label>
+                </li>
 
             </ul>
-  </div>
-        <button id="submit">Submit</button>
+        </div>
+        <button id="submit">Prosseguir</button>
     </div>
 
-    <div class="texto-mudando">
-        <h2>Ruivaldo</h2>
-    </div>
     <div id="emoji-overlay" style="display: none;">
         <div id="emoji-container">
-            <img id="laughing-emoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f602.svg" alt="Laughing Emoji" style="width: 100px;">
+            <img id="laughing-emoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f602.svg" alt="Laughing Emoji"
+                style="width: 100px;">
         </div>
     </div>
-    
 
-    
+
+
 </body>
+
 </html>
